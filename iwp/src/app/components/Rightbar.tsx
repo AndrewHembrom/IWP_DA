@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Rightbar: React.FC = () => {
   const topQuestions = [
     "How do I return the response from an asynchronous call?",
     "Official locator strategies for the WebDriver",
     "How can I prevent SQL injection in PHP?",
-    "How can I get query string values in JavaScript?"
+    "How can I get query string values in JavaScript?",
   ];
 
   const popularTags = [
@@ -13,7 +13,7 @@ const Rightbar: React.FC = () => {
     { name: "JavaScript", count: 11 },
     { name: "CSS", count: 8 },
     { name: "PHP", count: 8 },
-    { name: "React.js", count: 6 }
+    { name: "React.js", count: 6 },
   ];
 
   return (

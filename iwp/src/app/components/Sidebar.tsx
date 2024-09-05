@@ -1,32 +1,32 @@
-'use client';
+"use client";
 
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from "react";
 
-import Link from 'next/link';
+import Link from "next/link";
 
-import { NavItems } from '@/app/config';
-import { cn } from '@/lib/utils';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { NavItems } from "@/app/config";
+import { cn } from "@/lib/utils";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Sidebar() {
   const navItems = NavItems();
 
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const saved = window.localStorage.getItem('sidebarExpanded');
+    if (typeof window !== "undefined") {
+      const saved = window.localStorage.getItem("sidebarExpanded");
       if (saved === null) {
         return true;
       }
       return JSON.parse(saved);
     }
-    return true; 
+    return true;
   });
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       window.localStorage.setItem(
-        'sidebarExpanded',
-        JSON.stringify(isSidebarExpanded),
+        "sidebarExpanded",
+        JSON.stringify(isSidebarExpanded)
       );
     }
   }, [isSidebarExpanded]);
@@ -39,8 +39,8 @@ export default function Sidebar() {
     <div className="pr-4">
       <div
         className={cn(
-          isSidebarExpanded ? 'w-[250px]' : 'w-[68px]',
-          'border-r transition-all duration-300 ease-in-out transform hidden sm:flex h-full bg-accent',
+          isSidebarExpanded ? "w-[250px]" : "w-[68px]",
+          "border-r transition-all duration-300 ease-in-out transform hidden sm:flex h-full bg-accent"
         )}
       >
         <aside className="flex h-full flex-col w-full break-words px-4 overflow-x-hidden columns-1">
@@ -48,20 +48,20 @@ export default function Sidebar() {
           <div className="mt-4 relative pb-2">
             <div className="flex flex-col space-y-1">
               {navItems.map((item, idx) => {
-                if (item.position === 'top') {
+                if (item.position === "top") {
                   return (
                     <div>
                       <Fragment key={idx}>
-                      <div className="space-y-1">
-                        <SideNavItem
-                          label={item.name}
-                          icon={item.icon}
-                          path={item.href}
-                          active={item.active}
-                          isSidebarExpanded={isSidebarExpanded}
-                        />
-                      </div>
-                    </Fragment>
+                        <div className="space-y-1">
+                          <SideNavItem
+                            label={item.name}
+                            icon={item.icon}
+                            path={item.href}
+                            active={item.active}
+                            isSidebarExpanded={isSidebarExpanded}
+                          />
+                        </div>
+                      </Fragment>
                     </div>
                   );
                 }
@@ -72,7 +72,7 @@ export default function Sidebar() {
           <div className="sticky bottom-0 mt-auto whitespace-nowrap mb-4 transition duration-200 block">
             {/* <ThemeToggle isDropDown={true} /> */}
             {navItems.map((item, idx) => {
-              if (item.position === 'bottom') {
+              if (item.position === "bottom") {
                 return (
                   <Fragment key={idx}>
                     <div className="space-y-1">
@@ -97,9 +97,9 @@ export default function Sidebar() {
             onClick={toggleSidebar}
           >
             {isSidebarExpanded ? (
-              <ChevronLeft size={16} className='stroke-foreground'/>
+              <ChevronLeft size={16} className="stroke-foreground" />
             ) : (
-              <ChevronRight size={16} className='stroke-foreground'/>
+              <ChevronRight size={16} className="stroke-foreground" />
             )}
           </button>
         </div>
@@ -122,8 +122,8 @@ export const SideNavItem: React.FC<{
           href={path}
           className={`h-full relative flex items-center whitespace-nowrap rounded-md ${
             active
-              ? 'font-base text-sm bg-neutral-200 shadow-sm text-neutral-700 dark:bg-neutral-800 dark:text-white'
-              : 'hover:bg-neutral-200 hover:text-neutral-700 text-neutral-500 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white'
+              ? "font-base text-sm bg-neutral-200 shadow-sm text-neutral-700 dark:bg-neutral-800 dark:text-white"
+              : "hover:bg-neutral-200 hover:text-neutral-700 text-neutral-500 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white"
           }`}
         >
           <div className="relative font-base text-sm py-1.5 px-2 flex flex-row items-center space-x-2 rounded-md duration-100">
@@ -132,20 +132,20 @@ export const SideNavItem: React.FC<{
           </div>
         </Link>
       ) : (
-          <div>
-              <Link
-                href={path}
-                className={`h-full relative flex items-center whitespace-nowrap rounded-md ${
-                  active
-                    ? 'font-base text-sm bg-neutral-200 text-neutral-700 dark:bg-neutral-800 dark:text-white'
-                    : 'hover:bg-neutral-200 hover:text-neutral-700 text-neutral-500 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white'
-                }`}
-              >
-                <div className="relative font-base text-sm p-2 flex flex-row items-center space-x-2 rounded-md duration-100">
-                  {icon}
-                </div>
-              </Link>  
-          </div>
+        <div>
+          <Link
+            href={path}
+            className={`h-full relative flex items-center whitespace-nowrap rounded-md ${
+              active
+                ? "font-base text-sm bg-neutral-200 text-neutral-700 dark:bg-neutral-800 dark:text-white"
+                : "hover:bg-neutral-200 hover:text-neutral-700 text-neutral-500 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white"
+            }`}
+          >
+            <div className="relative font-base text-sm p-2 flex flex-row items-center space-x-2 rounded-md duration-100">
+              {icon}
+            </div>
+          </Link>
+        </div>
       )}
     </>
   );

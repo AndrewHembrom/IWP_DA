@@ -1,6 +1,6 @@
-import { usePathname } from 'next/navigation';
+import { usePathname } from "next/navigation";
 
-import { Bell, Briefcase, Home, Settings, User } from 'lucide-react';
+import { Bell, Briefcase, Home, Settings, User } from "lucide-react";
 
 export const NavItems = () => {
   const pathname = usePathname();
@@ -11,39 +11,39 @@ export const NavItems = () => {
 
   return [
     {
-      name: 'Home',
-      href: '/',
+      name: "Home",
+      href: "/",
       icon: <Home size={20} />,
-      active: pathname === '/',
-      position: 'top',
+      active: pathname === "/",
+      position: "top",
     },
     {
-      name: 'Profile',
-      href: '/profile',
+      name: "Profile",
+      href: "/profile",
       icon: <User size={20} />,
-      active: isNavItemActive(pathname, '/profile'),
-      position: 'top',
+      active: isNavItemActive(pathname, "/profile"),
+      position: "top",
     },
     {
-      name: 'Notifications',
-      href: '/notifications',
+      name: "Notifications",
+      href: "/notifications",
       icon: <Bell size={20} />,
-      active: isNavItemActive(pathname, '/notifications'),
-      position: 'top',
+      active: isNavItemActive(pathname, "/notifications"),
+      position: "top",
     },
     {
-      name: 'Your Questions',
-      href: '/projects',
+      name: "Your Questions",
+      href: "/projects",
       icon: <Briefcase size={20} />,
-      active: isNavItemActive(pathname, '/your-questions'),
-      position: 'top',
+      active: isNavItemActive(pathname, "/your-questions"),
+      position: "top",
     },
     {
-      name: 'Settings',
-      href: '/settings',
+      name: "Settings",
+      href: "/settings",
       icon: <Settings size={20} />,
-      active: isNavItemActive(pathname, '/settings'),
-      position: 'bottom',
+      active: isNavItemActive(pathname, "/settings"),
+      position: "bottom",
     },
   ];
 };
