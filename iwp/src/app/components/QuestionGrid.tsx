@@ -2,16 +2,6 @@ import { QuestionCard } from "./QuestionCard";
 
 const QUESTIONS = [
   {
-    title: "What is Barca Cooking?",
-    author: "Visca Barca",
-    votes: "10",
-    ans: "2",
-    views: "100M",
-    timestamp: "1 day ago",
-    description:
-      "Whatever Barca is cooking is working tf out man Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
-  },
-  {
     title: "How do I return the response from an asynchronous call?",
     author: "Async Man",
     votes: "10",
@@ -19,7 +9,7 @@ const QUESTIONS = [
     views: "100M",
     timestamp: "1 day ago",
     description:
-      "Whatever Barca is cooking is working tf out man Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
+      " Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
   },
   {
     title: "Official locator strategies for the WebDriver",
@@ -29,7 +19,7 @@ const QUESTIONS = [
     views: "100M",
     timestamp: "1 day ago",
     description:
-      "Whatever Barca is cooking is working tf out man Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
+      " Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
   },
   {
     title: "How can I prevent SQL injection in PHP?",
@@ -39,7 +29,7 @@ const QUESTIONS = [
     views: "100M",
     timestamp: "1 day ago",
     description:
-      "Whatever Barca is cooking is working tf out man Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
+      " Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
   },
   {
     title: "How can I get query string values in JavaScript?",
@@ -49,7 +39,7 @@ const QUESTIONS = [
     views: "100M",
     timestamp: "1 day ago",
     description:
-      "Whatever Barca is cooking is working tf out man Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
+      " Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
   },
   {
     title: "What is Barca Cooking?",
@@ -59,7 +49,7 @@ const QUESTIONS = [
     views: "100M",
     timestamp: "1 day ago",
     description:
-      "Whatever Barca is cooking is working tf out man Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
+      " Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
   },
   {
     title: "What is Barca Cooking?",
@@ -69,7 +59,7 @@ const QUESTIONS = [
     views: "100M",
     timestamp: "1 day ago",
     description:
-      "Whatever Barca is cooking is working tf out man Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
+      " Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
   },
   {
     title: "What is Barca Cooking?",
@@ -79,7 +69,7 @@ const QUESTIONS = [
     views: "100M",
     timestamp: "1 day ago",
     description:
-      "Whatever Barca is cooking is working tf out man Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
+      " Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
   },
   {
     title: "What is Barca Cooking?",
@@ -89,7 +79,7 @@ const QUESTIONS = [
     views: "100M",
     timestamp: "1 day ago",
     description:
-      "Whatever Barca is cooking is working tf out man Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
+      " Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
   },
   {
     title: "What is Barca Cooking?",
@@ -99,7 +89,7 @@ const QUESTIONS = [
     views: "100M",
     timestamp: "1 day ago",
     description:
-      "Whatever Barca is cooking is working tf out man Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
+      " Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
   },
   {
     title: "What is Barca Cooking?",
@@ -109,7 +99,7 @@ const QUESTIONS = [
     views: "100M",
     timestamp: "1 day ago",
     description:
-      "Whatever Barca is cooking is working tf out man Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
+      " Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
   },
   {
     title: "What is Barca Cooking?",
@@ -119,7 +109,7 @@ const QUESTIONS = [
     views: "100M",
     timestamp: "1 day ago",
     description:
-      "Whatever Barca is cooking is working tf out man Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
+      " Imagine that files on your desktop didn’t have names. Instead, you’d refer to them by their order — the first file, the second file, and so on. You could get used to it, but once you delete a file, it would get confusing. The second file would become the first file, the third file would be the second file, and so on.",
   },
 ];
 
